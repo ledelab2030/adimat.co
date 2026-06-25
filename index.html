@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ADIMAT — Química para Oil &amp; Gas y protección de maderas | I+DE S.A.S.</title>
+<meta name="description" content="ADIMAT, marca comercial de I+DE S.A.S. Química industrial con inteligencia de aplicación: línea PET para Oil & Gas (estimulación y workover) y línea de protección de maderas. Barranquilla, Colombia.">
+<meta property="og:title" content="ADIMAT — Química para Oil & Gas y protección de maderas">
+<meta property="og:description" content="No vendemos canecas: resolvemos tratamientos. Línea PET (Oil & Gas) y protección de maderas, con inteligencia de aplicación.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://adimat.co">
+<meta name="theme-color" content="#0F1C22">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230F1C22'/%3E%3Cpath%20d='M32%2018v28M18%2032h28'%20stroke='%230E7C66'%20stroke-width='6'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0F1C22;--ink-soft:#3C4D53;--ink-faint:#6B7B80;
+  --paper:#F4F6F5;--surface:#FFFFFF;--line:#DCE3E1;--line-soft:#E8ECEB;
+  --teal:#0E7C66;--teal-ink:#0A5747;--teal-wash:#E7F1EE;--teal-line:#BFDCD3;
+  --ochre:#A9641A;--ochre-ink:#834D12;--ochre-wash:#F4EBDF;--ochre-line:#E4CFB4;
+  --maxw:1140px;--pad:clamp(20px,5vw,48px);--r:10px;--r-lg:16px;
+  --f-display:"Space Grotesk",system-ui,sans-serif;--f-body:"Inter",system-ui,sans-serif;--f-mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+:target{scroll-margin-top:84px}
+body{margin:0;font-family:var(--f-body);color:var(--ink);background:var(--paper);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--f-display);font-weight:700;line-height:1.08;letter-spacing:-0.02em;margin:0}
+p{margin:0}
+.plus{color:var(--teal);font-weight:700}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-inline:var(--pad)}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;z-index:200}
+.skip:focus{left:0}
+.eyebrow{font-family:var(--f-mono);font-size:12.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-ink);display:inline-flex;align-items:center;gap:9px;margin:0 0 18px}
+.eyebrow::before{content:"+";color:var(--teal);font-weight:500;font-size:15px}
+.eyebrow.on-dark{color:#7FC9B7}.eyebrow.on-dark::before{color:#7FC9B7}
+.eyebrow.ochre{color:var(--ochre-ink)}.eyebrow.ochre::before{color:var(--ochre)}
+/* header */
+.site-head{position:sticky;top:0;z-index:100;background:rgba(244,246,245,0.88);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+.head-row{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:-0.01em;display:inline-flex;align-items:center;gap:7px}
+.logo .mark{color:var(--teal);font-size:24px;line-height:1}
+.logo .sm{font-family:var(--f-mono);font-size:10.5px;letter-spacing:0.1em;color:var(--ink-faint);font-weight:400;text-transform:uppercase;margin-left:3px}
+.nav{display:flex;align-items:center;gap:26px}
+.nav a{font-size:15px;color:var(--ink-soft)}
+.nav a:hover{color:var(--ink)}
+.nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;width:42px;height:42px;font-size:20px;cursor:pointer;color:var(--ink)}
+.nav-toggle i{font-style:normal;line-height:1}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-body);font-size:15px;font-weight:500;padding:11px 20px;border-radius:var(--r);border:1px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease,border-color .15s ease;white-space:nowrap}
+.btn-primary{background:var(--ink);color:#fff}.btn-primary:hover{transform:translateY(-1px);background:#16323b}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}.btn-ghost:hover{border-color:var(--ink-soft);background:var(--surface)}
+.btn-teal{background:var(--teal);color:#fff}.btn-teal:hover{transform:translateY(-1px);background:var(--teal-ink)}
+.btn .ar{transition:transform .15s ease}.btn:hover .ar{transform:translateX(3px)}
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;z-index:0;background-image:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='34'%20height='34'%3E%3Cpath%20d='M17%2012.5v9M12.5%2017h9'%20stroke='%230f1c22'%20stroke-opacity='0.05'%20stroke-width='1'/%3E%3C/svg%3E")}
+.hero .wrap{position:relative;z-index:1}
+.hero-inner{padding:clamp(54px,8vw,100px) 0 clamp(36px,5vw,64px);max-width:780px}
+.hero h1{font-size:clamp(40px,7vw,70px);margin:0 0 22px}
+.hero .lead{font-size:clamp(18px,2.2vw,21px);color:var(--ink-soft);max-width:580px;margin:0 0 30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+/* doors */
+.doors{display:grid;grid-template-columns:1fr 1fr;gap:18px;padding-bottom:clamp(34px,5vw,64px)}
+.door{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:clamp(24px,3vw,36px);min-height:240px;transition:transform .18s ease,border-color .18s ease}
+.door:hover{transform:translateY(-3px)}
+.door--pet:hover{border-color:var(--teal-line)}.door--adimat:hover{border-color:var(--ochre-line)}
+.door .door-mark{font-family:var(--f-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;width:max-content}
+.door--pet .door-mark{background:var(--teal-wash);color:var(--teal-ink)}.door--adimat .door-mark{background:var(--ochre-wash);color:var(--ochre-ink)}
+.door h2{font-size:clamp(23px,2.6vw,29px);margin:18px 0 10px}
+.door p{color:var(--ink-soft);font-size:16px;margin:0 0 18px;max-width:42ch}
+.door .tags{font-family:var(--f-mono);font-size:13px;color:var(--ink-faint);margin:0 0 20px}
+.door .go{margin-top:auto;font-weight:500;display:inline-flex;align-items:center;gap:8px}
+.door--pet .go{color:var(--teal-ink)}.door--adimat .go{color:var(--ochre-ink)}
+.go .ar{transition:transform .15s ease}.door:hover .go .ar{transform:translateX(4px)}
+/* trust */
+.trust{border-block:1px solid var(--line);background:var(--surface)}
+.trust .wrap{padding-block:30px}
+.trust-label{font-family:var(--f-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-family:var(--f-mono);font-size:13px;color:var(--ink-soft);border:1px solid var(--line);border-radius:999px;padding:7px 14px;background:var(--paper)}
+.chip b{color:var(--teal-ink);font-weight:500}
+.trust-note{font-family:var(--f-mono);font-size:12.5px;color:var(--ink-faint);margin:16px 0 0}
+/* dark band */
+.band-dark{background:var(--ink);color:#E6ECEA}
+.band-dark .wrap{padding-block:clamp(54px,7vw,90px)}
+.band-dark h2{color:#fff;font-size:clamp(28px,4vw,44px);max-width:15ch}
+.band-dark h2 .plus{color:#5FD0B6}
+.band-dark p{color:#9FB2AE;max-width:58ch;margin:22px 0 28px;font-size:18px}
+.band-dark .link{color:#5FD0B6;font-weight:500;display:inline-flex;gap:8px;align-items:center}
+.band-dark .link .ar{transition:transform .15s ease}.band-dark .link:hover .ar{transform:translateX(4px)}
+/* sections */
+.section{padding-block:clamp(50px,7vw,88px)}
+.section-head{max-width:660px;margin:0 0 38px}
+.section-head h2{font-size:clamp(26px,3.4vw,40px)}
+.section-head p{color:var(--ink-soft);margin:14px 0 0}
+.ref-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ref{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;transition:border-color .15s ease,transform .15s ease}
+.ref:hover{transform:translateY(-2px);border-color:var(--teal-line)}
+.ref.wood:hover{border-color:var(--ochre-line)}
+.ref .name{font-family:var(--f-mono);font-weight:500;font-size:17px;color:var(--ink)}
+.ref .meta{font-family:var(--f-mono);font-size:13px;color:var(--teal-ink);margin-top:6px}
+.ref.wood .meta{color:var(--ochre-ink)}
+.ref.more{display:flex;align-items:center;justify-content:center;color:var(--ink-faint);font-family:var(--f-mono);font-size:14px;background:var(--paper);border-style:dashed}
+.callout{display:flex;gap:18px;align-items:flex-start;background:var(--teal-wash);border:1px solid var(--teal-line);border-radius:var(--r-lg);padding:24px 26px;margin-top:22px}
+.callout.ochre{background:var(--ochre-wash);border-color:var(--ochre-line)}
+.callout .ic{flex:none;width:42px;height:42px;border-radius:10px;background:var(--surface);display:flex;align-items:center;justify-content:center;color:var(--teal-ink);font-family:var(--f-mono);font-size:20px;font-weight:500}
+.callout.ochre .ic{color:var(--ochre-ink)}
+.callout h3{font-size:18px;margin:0 0 6px}
+.callout p{color:var(--ink-soft);font-size:15.5px;margin:0}
+.feature-card{background:var(--surface);border:2px solid var(--teal);border-radius:var(--r-lg);padding:clamp(26px,3.4vw,42px);margin-top:24px}
+.feature-card .ftag{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:var(--teal-ink);background:var(--teal-wash);padding:5px 12px;border-radius:999px;margin-bottom:18px}
+.feature-card h3{font-size:clamp(22px,3vw,30px);margin:0 0 12px}
+.feature-card h3 .plus{color:var(--teal)}
+.feature-card .lead{color:var(--ink-soft);max-width:60ch;margin:0 0 24px;font-size:17px}
+.cap-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px;margin:0 0 28px}
+.cap{display:flex;gap:10px;align-items:flex-start;font-size:15.5px;color:var(--ink-soft)}
+.cap .x{color:var(--teal);font-family:var(--f-mono);font-weight:500}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:8px}
+.howitem .mk{font-family:var(--f-mono);color:var(--teal);font-size:15px}
+.howitem h3{font-size:17px;margin:10px 0 6px}
+.howitem p{color:var(--ink-soft);font-size:15px}
+.feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.feat{padding-top:22px;border-top:2px solid var(--ink)}
+.feat .mk{font-family:var(--f-mono);color:var(--teal);font-size:18px;display:block;margin:-2px 0 14px}
+.feat h3{font-size:19px;margin:0 0 10px}
+.feat p{color:var(--ink-soft);font-size:15.5px}
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:start;margin-top:8px}
+.field{margin:0 0 16px}
+.field label{display:block;font-size:14px;font-weight:500;margin:0 0 7px}
+.field input,.field select,.field textarea{width:100%;font-family:var(--f-body);font-size:16px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:11px 13px;transition:border-color .15s ease,box-shadow .15s ease}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(14,124,102,.15)}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-lg);padding:26px}
+.info-row{padding:14px 0;border-top:1px solid var(--line-soft)}
+.info-row:first-of-type{border-top:none;padding-top:0}
+.info-row .k{font-family:var(--f-mono);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 4px}
+.info-row .v{font-size:16px}
+.info-row .v a{color:var(--teal-ink);font-weight:500}
+.form-note{font-size:13.5px;color:var(--ink-faint);margin:6px 0 0}
+.form-ok{display:none;background:var(--teal-wash);border:1px solid var(--teal-line);border-radius:var(--r);padding:14px 16px;color:var(--teal-ink);font-size:15px;margin-top:14px}
+/* footer */
+.site-foot{background:var(--ink);color:#9FB2AE}
+.site-foot .wrap{padding-block:52px 30px}
+.foot-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}
+.foot-brand .logo{color:#fff;font-size:23px}
+.foot-brand p{margin:14px 0 0;font-size:14.5px;color:#7E928E;max-width:38ch}
+.foot-col h4{font-family:var(--f-mono);font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#6F8480;margin:0 0 14px;font-weight:500}
+.foot-col a{display:block;color:#B9C7C3;font-size:15px;margin:0 0 9px}
+.foot-col a:hover{color:#fff}
+.foot-col span{display:block;color:#7E928E;font-size:14px;margin-bottom:9px}
+.foot-bottom{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);font-family:var(--f-mono);font-size:12.5px;color:#6F8480}
+.reveal{opacity:0;transform:translateY(14px)}
+.reveal.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+@media(max-width:860px){
+  .nav{position:fixed;inset:64px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--surface);border-bottom:1px solid var(--line);padding:8px var(--pad) 18px;transform:translateY(-12px);opacity:0;pointer-events:none;transition:opacity .2s ease,transform .2s ease}
+  .nav.open{transform:none;opacity:1;pointer-events:auto}
+  .nav a{padding:13px 0;border-bottom:1px solid var(--line-soft)}
+  .nav .btn{margin:14px 0 0;justify-content:center}
+  .nav-toggle{display:inline-flex;align-items:center;justify-content:center}
+  .doors,.feat-grid,.ref-grid,.cols-3,.cap-grid,.contact-grid,.foot-top{grid-template-columns:1fr}
+}
+@media(max-width:520px){.ref-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-head">
+  <div class="wrap head-row">
+    <a class="logo" href="#main" aria-label="ADIMAT inicio"><span class="mark">+</span>ADIMAT<span class="sm">I+DE</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-controls="nav" aria-expanded="false"><i>≡</i></button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a href="#oil-gas">Oil &amp; Gas</a>
+      <a href="#maderas">Maderas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="btn btn-teal" href="#contacto">Cotización</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-inner">
+        <span class="eyebrow">ADIMAT · marca de I+DE S.A.S. · Barranquilla, Colombia</span>
+        <h1>Química <span class="plus">+</span> inteligencia de aplicación</h1>
+        <p class="lead">No vendemos canecas: resolvemos tratamientos. Química industrial para dos mundos — estimulación de pozos petroleros y protección de maderas — con el criterio de aplicación que sostiene cada resultado.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#oil-gas">Ver línea Oil &amp; Gas <span class="ar" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="#contacto">Solicitar cotización</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-label="Líneas de negocio">
+    <div class="doors">
+      <a class="door door--pet" href="#oil-gas">
+        <span class="door-mark">Línea PET · Oil &amp; Gas</span>
+        <h2>Tratamientos para estimulación y workover</h2>
+        <p>Químicos de pozo entregados con asistente técnico de aplicación. Marca PET, licenciada por LedeLab Group OÜ.</p>
+        <p class="tags">estimulación · workover · ~20 referencias</p>
+        <span class="go">Conocer la línea <span class="ar" aria-hidden="true">→</span></span>
+      </a>
+      <a class="door door--adimat" href="#maderas">
+        <span class="door-mark">Línea Maderas</span>
+        <h2>Protección de maderas</h2>
+        <p>Antimancha, preservantes y sales de cobre, con respaldo de la red internacional IRG-WP.</p>
+        <p class="tags">antimancha · preservantes · sales de cobre</p>
+        <span class="go">Conocer la línea <span class="ar" aria-hidden="true">→</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap">
+      <p class="trust-label">Validados y recertificados por</p>
+      <div class="chips">
+        <span class="chip"><b>Halliburton</b> — recertificación PET-200</span>
+        <span class="chip"><b>Ecopetrol</b> — códigos de producto</span>
+        <span class="chip"><b>Weatherford</b></span>
+        <span class="chip"><b>IRG-WP</b> — protección de maderas</span>
+      </div>
+      <p class="trust-note">Marca PET licenciada por LedeLab Group OÜ (Estonia).</p>
+    </div>
+  </section>
+
+  <section class="section wrap" id="oil-gas">
+    <div class="section-head">
+      <span class="eyebrow">Línea PET · Oil &amp; Gas</span>
+      <h2>Química para estimulación y workover</h2>
+      <p>El negocio que más mueve la casa. Tratamientos resueltos: la referencia correcta para cada daño de pozo, con dosis y volúmenes calculados — no solo el producto.</p>
+    </div>
+    <div class="ref-grid">
+      <div class="ref reveal"><div class="name">PET-55</div><div class="meta">dosis 1.5–5% v/v</div></div>
+      <div class="ref reveal"><div class="name">PET-6</div><div class="meta">ficha técnica disponible</div></div>
+      <div class="ref reveal"><div class="name">PET-200</div><div class="meta">dosis 4–10%</div></div>
+      <div class="ref reveal"><div class="name">PET-550</div><div class="meta">dosis 2–8%</div></div>
+      <div class="ref reveal"><div class="name">PET-565</div><div class="meta">nuevo · 2025</div></div>
+      <div class="ref more reveal">+ ~15 referencias</div>
+    </div>
+
+    <div class="callout reveal">
+      <span class="ic">✓</span>
+      <div>
+        <h3>Respaldo técnico verificable</h3>
+        <p>PET-200 fue recertificado por Halliburton en su propio laboratorio (Neiva, 2022). Cuando el desempeño se cuestiona, hay un protocolo de tercero que lo respalda.</p>
+      </div>
+    </div>
+
+    <div class="feature-card reveal" id="inteligencia">
+      <span class="ftag">Próximamente</span>
+      <h3>Asistente técnico de aplicación</h3>
+      <p class="lead">La capa que ningún proveedor de nuestro tamaño ofrece. Tu líder de estimulación resuelve el tratamiento completo desde el navegador, sin instalar nada.</p>
+      <div class="cap-grid">
+        <div class="cap"><span class="x">+</span><span>Qué referencia usar según el daño del pozo</span></div>
+        <div class="cap"><span class="x">+</span><span>Cálculo de dosis y volúmenes</span></div>
+        <div class="cap"><span class="x">+</span><span>Matriz de compatibilidad entre productos</span></div>
+        <div class="cap"><span class="x">+</span><span>Reporte de tratamiento listo para campo</span></div>
+      </div>
+      <a class="btn btn-teal" href="#contacto">Solicitar acceso anticipado <span class="ar" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="band-dark">
+    <div class="wrap">
+      <span class="eyebrow on-dark">La capa que nos distingue</span>
+      <h2>Química <span class="plus">+</span> inteligencia</h2>
+      <p>Cualquiera vende un químico. Nosotros entregamos, junto al producto, el criterio de aplicación: qué referencia, qué dosis, qué volumen, qué compatibilidad. La diferencia entre comprar un galón y resolver un tratamiento.</p>
+      <a class="link" href="#contacto">Hablar con un técnico <span class="ar" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="maderas">
+    <div class="section-head">
+      <span class="eyebrow ochre">Línea Maderas</span>
+      <h2>Protección de maderas</h2>
+      <p>Formulaciones para cada etapa de la protección de la madera, del aserradero al producto terminado, con respaldo de la red internacional IRG-WP.</p>
+    </div>
+    <div class="ref-grid">
+      <div class="ref wood reveal"><div class="name">Antimancha</div><div class="meta">hongos cromógenos</div></div>
+      <div class="ref wood reveal"><div class="name">Preservantes</div><div class="meta">hongos e insectos</div></div>
+      <div class="ref wood reveal"><div class="name">Sales de cobre</div><div class="meta">base para tratamiento</div></div>
+      <div class="ref wood reveal"><div class="name">Inmunizantes</div><div class="meta">a medida del proceso</div></div>
+      <div class="ref wood reveal"><div class="name">Aditivos</div><div class="meta">fijación y penetración</div></div>
+      <div class="ref wood more reveal">formulación a pedido</div>
+    </div>
+    <div class="callout ochre reveal">
+      <span class="ic">+</span>
+      <div>
+        <h3>Respaldo técnico internacional</h3>
+        <p>I+DE es miembro del IRG-WP (International Research Group on Wood Protection): formulación propia conectada al estado del arte del sector, y una puerta a aliados y distribuidores en América Latina.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="nosotros" style="padding-top:0">
+    <div class="section-head">
+      <span class="eyebrow">Nosotros</span>
+      <h2>Una casa, dos líneas, un criterio</h2>
+      <p>ADIMAT es la marca comercial de I+DE S.A.S., empresa colombiana de química industrial con base en Barranquilla. Operamos ligero: producción en plantas aliadas certificadas, contra pedido, con trazabilidad de lote. Menos costo fijo, más foco en la química y su aplicación.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <span class="mk">+</span>
+        <h3>Inteligencia de aplicación</h3>
+        <p>Te decimos qué referencia, qué dosis y qué volumen. No solo despachamos producto: resolvemos el tratamiento.</p>
+      </div>
+      <div class="feat reveal">
+        <span class="mk">+</span>
+        <h3>Modelo confiable</h3>
+        <p>Producción en planta aliada certificada, contra orden confirmada. Sin sobrecostos de inventario.</p>
+      </div>
+      <div class="feat reveal">
+        <span class="mk">+</span>
+        <h3>Respaldo verificable</h3>
+        <p>Décadas de formulación y recertificaciones de operadoras de primer nivel. El desempeño es protocolo, no promesa.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" id="contacto" style="padding-top:0">
+    <div class="section-head">
+      <span class="eyebrow">Contacto</span>
+      <h2>Hablemos de tu tratamiento</h2>
+      <p>Cotizaciones, muestras o documentación técnica. Contanos qué necesitás y te respondemos.</p>
+    </div>
+    <div class="contact-grid">
+      <form id="contact-form" novalidate>
+        <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="empresa">Empresa</label><input id="empresa" name="empresa" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="email">Correo</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="linea">Línea de interés</label>
+          <select id="linea" name="linea">
+            <option>PET — Oil &amp; Gas</option>
+            <option>Protección de maderas</option>
+            <option>Documentación / validación de proveedores</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" placeholder="Contanos el tratamiento, la referencia o el documento que necesitás."></textarea></div>
+        <button class="btn btn-primary" type="submit">Enviar mensaje <span class="ar" aria-hidden="true">→</span></button>
+        <p class="form-note">Se abrirá tu correo con el mensaje listo para enviar a gerencia@imasde.co.</p>
+        <div class="form-ok" id="form-ok">Listo — abrimos tu correo. Si no se abrió, escribinos directo a gerencia@imasde.co.</div>
+      </form>
+      <aside class="info-card">
+        <div class="info-row"><p class="k">Correo</p><p class="v"><a href="mailto:gerencia@imasde.co">gerencia@imasde.co</a></p></div>
+        <div class="info-row"><p class="k">Empresa</p><p class="v">I+DE S.A.S.<br>NIT 901.167.670-0</p></div>
+        <div class="info-row"><p class="k">Ubicación</p><p class="v">Barranquilla, Colombia</p></div>
+        <div class="info-row"><p class="k">Política comercial</p><p class="v" style="font-size:15px;color:var(--ink-soft)">Producción contra orden confirmada, con pago anticipado.</p></div>
+      </aside>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <span class="logo"><span class="mark">+</span>ADIMAT</span>
+        <p>Marca comercial de I+DE S.A.S. Química industrial con inteligencia de aplicación: Oil &amp; Gas y protección de maderas.</p>
+      </div>
+      <div class="foot-col">
+        <h4>Líneas</h4>
+        <a href="#oil-gas">PET — Oil &amp; Gas</a>
+        <a href="#maderas">Protección de maderas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="foot-col">
+        <h4>I+DE S.A.S.</h4>
+        <a href="mailto:gerencia@imasde.co">gerencia@imasde.co</a>
+        <span>NIT 901.167.670-0</span>
+        <span>Barranquilla, Colombia</span>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span data-year>2026</span> I+DE S.A.S. — ADIMAT es su marca comercial.</span>
+      <span>Marca PET licenciada por LedeLab Group OÜ (Estonia).</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var t=document.querySelector('.nav-toggle'),n=document.getElementById('nav');
+  if(t&&n){t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o?'true':'false');});
+    n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');t.setAttribute('aria-expanded','false');});});}
+  var y=document.querySelector('[data-year]');if(y){y.textContent=new Date().getFullYear();}
+  var items=document.querySelectorAll('.reveal');
+  if('IntersectionObserver'in window&&items.length){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12});items.forEach(function(el){io.observe(el);});}
+  else{items.forEach(function(el){el.classList.add('in');});}
+  var f=document.getElementById('contact-form');
+  if(f){f.addEventListener('submit',function(ev){ev.preventDefault();var d=new FormData(f);
+    var s='Cotización / contacto — '+((d.get('empresa')||d.get('nombre')||'web ADIMAT'));
+    var b='Nombre: '+(d.get('nombre')||'')+'\nEmpresa: '+(d.get('empresa')||'')+'\nEmail: '+(d.get('email')||'')+'\nLínea: '+(d.get('linea')||'')+'\n\n'+(d.get('mensaje')||'');
+    window.location.href='mailto:gerencia@imasde.co?subject='+encodeURIComponent(s)+'&body='+encodeURIComponent(b);
+    var ok=document.getElementById('form-ok');if(ok){ok.style.display='block';}});}
+})();
+</script>
+</body>
+</html>
