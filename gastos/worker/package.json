@@ -1,0 +1,20 @@
+{
+  "name": "gastos-sync-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create gastos-db",
+    "db:migrate": "wrangler d1 execute gastos-db --file=./schema.sql",
+    "db:migrate:remote": "wrangler d1 execute gastos-db --remote --file=./schema.sql",
+    "secret:set": "wrangler secret put SYNC_KEY",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241022.0",
+    "typescript": "^5.6.3",
+    "wrangler": "^3.84.0"
+  }
+}

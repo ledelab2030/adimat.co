@@ -1,0 +1,17 @@
+# Copia este archivo a wrangler.toml y completa los valores.
+# La clave de sincronizacion NUNCA va aqui: se configura con
+#   wrangler secret put SYNC_KEY
+
+name = "gastos-sync"
+main = "src/index.ts"
+compatibility_date = "2024-11-01"
+
+[vars]
+# Dominio(s) desde donde se servira la app (separados por coma). Sin esto,
+# el Worker rechaza todas las peticiones por CORS.
+ALLOWED_ORIGIN = "https://tu-dominio.pages.dev"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "gastos-db"
+database_id = "00000000-0000-0000-0000-000000000000"
